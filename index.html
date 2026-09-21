@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IFT6761 Colloque 1 · Automne 2026</title>
+<meta name="description" content="IFT6761 Colloque 1, Université de Montréal, automne 2026 : faire de la science à l'ère des LLM. Validation, jugement et responsabilité.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1d1d1f;
+    --muted: #5f6368;
+    --rule: #e3e3e6;
+    --accent: #0b57d0;
+    --soft: #f5f6f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141416;
+      --fg: #e8e8ea;
+      --muted: #a0a3a8;
+      --rule: #2c2d31;
+      --accent: #8ab4f8;
+      --soft: #1d1e21;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 80px; }
+  header p { margin: 4px 0; color: var(--muted); }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-size: 1.2rem; margin: 44px 0 12px; padding-top: 16px; border-top: 1px solid var(--rule); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .lede { font-size: 1.1rem; margin-top: 24px; }
+  .facts { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; margin: 20px 0 0; }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  ol.sessions { list-style: none; padding: 0; margin: 0; }
+  ol.sessions li { display: grid; grid-template-columns: 7.5rem 1fr; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  ol.sessions li:last-child { border-bottom: 0; }
+  .date { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .talk { font-weight: 600; }
+  .meta { color: var(--muted); font-size: 0.95rem; }
+  .note { background: var(--soft); border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+  ul { padding-left: 1.2rem; }
+  li { margin: 4px 0; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.9rem; }
+  @media (max-width: 540px) {
+    ol.sessions li { grid-template-columns: 1fr; gap: 2px; }
+    .facts { grid-template-columns: 1fr; }
+    .facts dt { margin-top: 8px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>IFT6761 Colloque 1</h1>
+  <p>Faire de la science à l'ère des LLM : validation, jugement et responsabilité</p>
+  <p>Université de Montréal, DIRO · Automne 2026</p>
+  <dl class="facts">
+    <dt>Enseignant</dt><dd><a href="https://pierrelucbacon.com">Pierre-Luc Bacon</a></dd>
+    <dt>Horaire</dt><dd>Mardis, à partir de 10h30 (fin vers 12h00)</dd>
+    <dt>Local</dt><dd>À confirmer</dd>
+    <dt>Crédits</dt><dd>1 crédit, réussite ou échec</dd>
+  </dl>
+</header>
+
+<p class="lede">Les modèles de langage rendent les propositions, les résumés et le code abondants. Ils ne rendent pas abondantes les preuves, le jugement ni la responsabilité. Ce colloque porte sur ce qui reste rare : choisir les bonnes questions, concevoir des tests indépendants, interpréter les échecs, et répondre des conséquences d'un déploiement.</p>
+
+<h2>Format</h2>
+<ul>
+  <li>Six séances. À chaque séance, on regarde ensemble une conférence enregistrée (45 à 60 minutes), puis on en discute pendant une trentaine de minutes.</li>
+  <li>Rien à préparer avant les séances, et aucun rapport écrit.</li>
+  <li>La dernière séance se termine par un court exposé oral de chaque étudiant.</li>
+</ul>
+
+<h2>Calendrier</h2>
+<ol class="sessions">
+  <li>
+    <span class="date">29 septembre</span>
+    <span>
+      <span class="talk">Arvind Narayanan</span>, <a href="https://www.youtube.com/watch?v=uiTwQG1ZyTw"><em>Adapting to the Transformation of Knowledge Work</em></a>
+      <br><span class="meta">Stanford Digital Economy Lab, mai 2026. Ce que les capacités des modèles changent, et ce qu'elles ne changent pas, au travail intellectuel.</span>
+    </span>
+  </li>
+  <li>
+    <span class="date">13 octobre</span>
+    <span>
+      <span class="talk">Katie Bouman</span>, <a href="https://iclr.cc/virtual/2026/invited-talk/10020868"><em>Images of the Hidden Universe</em></a>
+      <br><span class="meta">ICLR 2026. Valider une image quand il n'existe aucune vérité terrain : l'imagerie des trous noirs.</span>
+    </span>
+  </li>
+  <li>
+    <span class="date">27 octobre</span>
+    <span>
+      <span class="talk">Alán Aspuru-Guzik</span>, <a href="https://www.youtube.com/watch?v=yjEZPr_fDWY"><em>The Future of Chemistry is Self-Driving</em></a>
+      <br><span class="meta">Acceleration Consortium, Université de Toronto. Des laboratoires où l'IA planifie et exécute les expériences : qui décide que la preuve suffit ?</span>
+    </span>
+  </li>
+  <li>
+    <span class="date">10 novembre</span>
+    <span>
+      <span class="talk">Shreya Shankar</span>, <a href="https://www.youtube.com/watch?v=tqUDjc1HzO4"><em>How to Automate AI Evals (Correctly)</em></a>
+      <br><span class="meta">Le point de vue du développeur : l'évaluation comme travail technique central, pas comme une formalité.</span>
+    </span>
+  </li>
+  <li>
+    <span class="date">24 novembre</span>
+    <span>
+      <span class="talk">Jocelyn Maclure</span>, <a href="https://www.youtube.com/watch?v=mBLebf9CqJE"><em>The Epistemology and Ethics of LLMs</em></a>
+      <br><span class="meta">École d'été « LLM Understanding », UQAM. Ce qu'un LLM sait, et ce qu'on peut lui confier.</span>
+    </span>
+  </li>
+  <li>
+    <span class="date">8 décembre</span>
+    <span>
+      <span class="talk">Terence Tao</span>, <a href="https://www.youtube.com/watch?v=sxAe4HJceFQ"><em>Mathematics in the Age of AI</em></a>
+      <br><span class="meta">ICM 2026. Vérifier une preuve n'est pas la comprendre. <a href="https://arxiv.org/abs/2608.16753">Article</a> · <a href="https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf">Diapositives</a>. Suivi des exposés oraux finaux (séance prolongée jusqu'à 12h30).</span>
+    </span>
+  </li>
+</ol>
+<p class="meta">Pas de séance pendant la semaine d'activités libres (19 au 25 octobre).</p>
+
+<h2>Évaluation</h2>
+<p>Le cours est évalué en réussite ou échec. Pour réussir :</p>
+<ul>
+  <li>être présent à au moins cinq séances sur six ;</li>
+  <li>participer à la discussion ;</li>
+  <li>présenter l'exposé oral final le 8 décembre.</li>
+</ul>
+
+<div class="note">
+  <strong>Exposé oral final</strong> (5 minutes). Choisissez un système d'IA ou une affirmation scientifique, et répondez à quatre questions :
+  <ol>
+    <li>Qu'est-ce que le modèle produit à faible coût ?</li>
+    <li>Qu'est-ce qui doit être mesuré ou testé de façon indépendante ?</li>
+    <li>Qui décide que la preuve est suffisante ?</li>
+    <li>Qui paie si l'affirmation est fausse ?</li>
+  </ol>
+</div>
+
+<h2>Utilisation de l'IA générative</h2>
+<p>L'usage d'outils d'IA générative est permis pour vous préparer. Tout ce qui est évalué se déroule en personne et à l'oral.</p>
+
+<h2>Pour aller plus loin (facultatif)</h2>
+<ul>
+  <li>Richard Feynman, <a href="https://calteches.library.caltech.edu/51/2/CargoCult.pdf"><em>Cargo Cult Science</em></a>, discours de 1974 à Caltech.</li>
+  <li>Arvind Narayanan et Sayash Kapoor, <a href="https://knightcolumbia.org/content/ai-as-normal-technology"><em>AI as Normal Technology</em></a>.</li>
+  <li>Sayash Kapoor et Arvind Narayanan, <a href="https://arxiv.org/abs/2207.07048"><em>Leakage and the Reproducibility Crisis in ML-based Science</em></a>.</li>
+  <li>Michael Nielsen, <a href="https://www.dwarkesh.com/p/michael-nielsen"><em>How science actually progresses</em></a>, entretien (2 heures).</li>
+  <li>HEC Montréal, <a href="https://www.edx.org/learn/ethics/hec-montreal-la-conduite-responsable-de-la-recherche-des-normes-a-la-pratique"><em>La conduite responsable de la recherche : des normes à la pratique</em></a>, formation en ligne gratuite.</li>
+</ul>
+
+<p class="note"><strong>Activité facultative.</strong> Conférence UdeM <a href="https://calendrier.umontreal.ca/activite/conference-reussite-2026-discerner-le-vrai-du-faux">« Discerner le vrai du faux : éveillons notre esprit critique ! »</a>, jeudi 5 novembre, 16h à 18h, amphithéâtre Ernest-Cormier (K-500), aussi en ligne.</p>
+
+<footer>
+  IFT6761 · Colloque 1 · DESS en apprentissage automatique · Université de Montréal
+</footer>
+
+</main>
+</body>
+</html>
